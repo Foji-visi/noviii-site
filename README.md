@@ -1,2 +1,2 @@
-# homushku.ch
-noviiy-site
+# noviy-site
+homushku.ch
