@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Суши за 30 минут — доставка</title>
-    <!-- ПОДКЛЮЧАЕМ ОТДЕЛЬНЫЙ CSS ФАЙЛ -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -32,29 +31,24 @@
 
     <h2>🔥 Популярные позиции</h2>
     <div class="cards">
-        <!-- КАРТОЧКА 1 -->
         <div class="card">
-            <!-- ПОМЕНЯЙ ССЫЛКУ на свою картинку в папке img -->
             <img src="img/roll1.jpg" alt="Филадельфия Люкс" />
             <h3>Филадельфия Люкс</h3>
             <div class="price">650 ₽</div>
             <button class="btn-small">В корзину</button>
         </div>
-        <!-- КАРТОЧКА 2 -->
         <div class="card">
             <img src="img/pepperoni.jpg" alt="Пепперони" />
             <h3>Пепперони</h3>
             <div class="price">550 ₽</div>
             <button class="btn-small">В корзину</button>
         </div>
-        <!-- КАРТОЧКА 3 -->
         <div class="card">
             <img src="img/set.jpg" alt="Сет для компании" />
             <h3>Сет для компании</h3>
             <div class="price">1890 ₽</div>
             <button class="btn-small">В корзину</button>
         </div>
-        <!-- КАРТОЧКА 4 -->
         <div class="card">
             <img src="img/матча.jpg" alt="Матча-латте" />
             <h3>Матча-латте</h3>
@@ -71,24 +65,105 @@
     </div>
 </div>
 
-<!-- ===== СТРАНИЦА 2: МЕНЮ ===== -->
+<!-- ===== СТРАНИЦА 2: МЕНЮ (ОБНОВЛЕНА) ===== -->
 <div id="menu" class="page">
     <h2>🍜 Наше меню</h2>
     <div class="tabs">
-        <button class="active-tab">Все</button>
-        <button>Роллы</button>
-        <button>Суши</button>
-        <button>Пицца</button>
-        <button>Напитки</button>
-        <button>Сеты</button>
+        <button class="active-tab" data-category="all">Все</button>
+        <button data-category="rolls">Роллы</button>
+        <button data-category="sushi">Суши</button>
+        <button data-category="pizza">Пицца</button>
+        <button data-category="drinks">Напитки</button>
+        <button data-category="sets">Сеты</button>
     </div>
-    <div class="cards">
-        <div class="card"><img src="img/rol2.jpg" alt="Калифорния" /><h3>Калифорния</h3><div class="price">490 ₽</div><button class="btn-small">В корзину</button></div>
-        <div class="card"><img src="img/pizza2.jpg" alt="Маргарита" /><h3>Маргарита</h3><div class="price">450 ₽</div><button class="btn-small">В корзину</button></div>
-        <div class="card"><img src="img/set2.jpg" alt="Сет Дружба" /><h3>Сет "Дружба"</h3><div class="price">1290 ₽</div><button class="btn-small">В корзину</button></div>
-        <div class="card"><img src="img/drink2.jpg" alt="Чай зеленый" /><h3>Чай зеленый</h3><div class="price">180 ₽</div><button class="btn-small">В корзину</button></div>
-        <div class="card"><img src="img/rol3.jpg" alt="Унаги" /><h3>Унаги</h3><div class="price">590 ₽</div><button class="btn-small">В корзину</button></div>
-        <div class="card"><img src="img/pizza3.jpg" alt="4 сыра" /><h3>4 сыра</h3><div class="price">520 ₽</div><button class="btn-small">В корзину</button></div>
+    <div class="cards" id="menu-cards">
+        <!-- РОЛЛЫ -->
+        <div class="card" data-category="rolls">
+            <img src="img/rol2.jpg" alt="Калифорния" />
+            <h3>Калифорния</h3>
+            <div class="price">490 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="rolls">
+            <img src="img/rol3.jpg" alt="Унаги" />
+            <h3>Унаги</h3>
+            <div class="price">590 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="rolls">
+            <img src="img/roll1.jpg" alt="Филадельфия Люкс" />
+            <h3>Филадельфия Люкс</h3>
+            <div class="price">650 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+
+        <!-- СУШИ -->
+        <div class="card" data-category="sushi">
+            <img src="img/sushi1.jpg" alt="Суши с лососем" />
+            <h3>Суши с лососем</h3>
+            <div class="price">320 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="sushi">
+            <img src="img/sushi2.jpg" alt="Суши с угрём" />
+            <h3>Суши с угрём</h3>
+            <div class="price">380 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+
+        <!-- ПИЦЦА -->
+        <div class="card" data-category="pizza">
+            <img src="img/pizza2.jpg" alt="Маргарита" />
+            <h3>Маргарита</h3>
+            <div class="price">450 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="pizza">
+            <img src="img/pizza3.jpg" alt="4 сыра" />
+            <h3>4 сыра</h3>
+            <div class="price">520 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="pizza">
+            <img src="img/pepperoni.jpg" alt="Пепперони" />
+            <h3>Пепперони</h3>
+            <div class="price">550 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+
+        <!-- НАПИТКИ -->
+        <div class="card" data-category="drinks">
+            <img src="img/drink2.jpg" alt="Чай зеленый" />
+            <h3>Чай зеленый</h3>
+            <div class="price">180 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="drinks">
+            <img src="img/drink3.jpg" alt="Лимонад" />
+            <h3>Лимонад</h3>
+            <div class="price">250 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="drinks">
+            <img src="img/матча.jpg" alt="Матча-латте" />
+            <h3>Матча-латте</h3>
+            <div class="price">320 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+
+        <!-- СЕТЫ -->
+        <div class="card" data-category="sets">
+            <img src="img/set2.jpg" alt="Сет Дружба" />
+            <h3>Сет "Дружба"</h3>
+            <div class="price">1290 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <div class="card" data-category="sets">
+            <img src="img/set3.jpg" alt="Сет для компании" />
+            <h3>Сет для компании</h3>
+            <div class="price">1890 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
     </div>
 </div>
 
@@ -117,7 +192,7 @@
     </div>
 </div>
 
-<!-- ===== СТРАНИЦА 4: О НАС (только информация, без фото и команды) ===== -->
+<!-- ===== СТРАНИЦА 4: О НАС (БЕЗ ФОТО И КОМАНДЫ) ===== -->
 <div id="about" class="page">
     <h2>🍣 О нашем ресторане</h2>
     <div style="margin: 25px 0;">
@@ -127,7 +202,7 @@
     </div>
 </div>
 
-<!-- ===== СТРАНИЦА 5: КОНТАКТЫ (без карты) ===== -->
+<!-- ===== СТРАНИЦА 5: КОНТАКТЫ (БЕЗ КАРТЫ) ===== -->
 <div id="contacts" class="page">
     <h2>📞 Контакты</h2>
     <div class="contact-grid" style="grid-template-columns: 1fr;">
@@ -156,8 +231,9 @@
     <p style="margin-top: 8px; font-size: 14px;">Сделано с ❤️ для вас</p>
 </footer>
 
-<!-- ===== JS ДЛЯ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ ===== -->
+<!-- ===== JS ===== -->
 <script>
+    // Переключение страниц
     function showPage(pageId) {
         const pages = document.querySelectorAll('.page');
         pages.forEach(p => p.classList.remove('active'));
@@ -165,11 +241,22 @@
         window.scrollTo(0, 0);
     }
 
-    // Табы в меню
+    // Фильтры в меню (работает!)
     document.querySelectorAll('.tabs button').forEach(btn => {
         btn.addEventListener('click', function() {
             document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active-tab'));
             this.classList.add('active-tab');
+
+            const category = this.getAttribute('data-category');
+            const cards = document.querySelectorAll('#menu-cards .card');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     });
 </script>
