@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Суши за 30 минут — доставка</title>
+    <!-- ПОДКЛЮЧАЕМ ОТДЕЛЬНЫЙ CSS ФАЙЛ -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== ХЕДЕР ===== -->
+<header>
+    <div class="logo">Суши<span>Пицца</span></div>
+    <nav>
+        <a onclick="showPage('home')">Главная</a>
+        <a onclick="showPage('menu')">Меню</a>
+        <a onclick="showPage('sales')">Акции</a>
+        <a onclick="showPage('about')">О нас</a>
+        <a onclick="showPage('contacts')">Контакты</a>
+    </nav>
+    <div class="phone">📞 +7 (999) 123-45-67</div>
+</header>
+
+<!-- ===== СТРАНИЦА 1: ГЛАВНАЯ ===== -->
+<div id="home" class="page active">
+    <div class="hero">
+        <h1>🍣 Доставка суши за 30 минут</h1>
+        <p>Свежие роллы, сочные сеты, бесплатная доставка от 1000 ₽</p>
+        <a href="#" class="btn">Заказать сейчас</a>
+    </div>
+
+    <h2>🔥 Популярные позиции</h2>
+    <div class="cards">
+        <!-- КАРТОЧКА 1 -->
+        <div class="card">
+            <!-- ПОМЕНЯЙ ССЫЛКУ на свою картинку в папке img -->
+            <img src="img/roll1.jpg" alt="Филадельфия Люкс" />
+            <h3>Филадельфия Люкс</h3>
+            <div class="price">650 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <!-- КАРТОЧКА 2 -->
+        <div class="card">
+            <img src="img/pepperoni.jpg" alt="Пепперони" />
+            <h3>Пепперони</h3>
+            <div class="price">550 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <!-- КАРТОЧКА 3 -->
+        <div class="card">
+            <img src="img/set.jpg" alt="Сет для компании" />
+            <h3>Сет для компании</h3>
+            <div class="price">1890 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+        <!-- КАРТОЧКА 4 -->
+        <div class="card">
+            <img src="img/drink1.jpg" alt="Матча-латте" />
+            <h3>Матча-латте</h3>
+            <div class="price">320 ₽</div>
+            <button class="btn-small">В корзину</button>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div><div class="icon">🕐</div><h4>Доставка 30 мин</h4><p>Бесплатно от 1000 ₽</p></div>
+        <div><div class="icon">🍣</div><h4>Свежие продукты</h4><p>Только сегодняшняя рыба</p></div>
+        <div><div class="icon">⭐</div><h4>Гарантия вкуса</h4><p>Или вернём деньги</p></div>
+        <div><div class="icon">🎁</div><h4>Подарки</h4><p>За каждый 5-й заказ</p></div>
+    </div>
+</div>
+
+<!-- ===== СТРАНИЦА 2: МЕНЮ ===== -->
+<div id="menu" class="page">
+    <h2>🍜 Наше меню</h2>
+    <div class="tabs">
+        <button class="active-tab">Все</button>
+        <button>Роллы</button>
+        <button>Суши</button>
+        <button>Пицца</button>
+        <button>Напитки</button>
+        <button>Сеты</button>
+    </div>
+    <div class="cards">
+        <div class="card"><img src="img/rol2.jpg" alt="Калифорния" /><h3>Калифорния</h3><div class="price">490 ₽</div><button class="btn-small">В корзину</button></div>
+        <div class="card"><img src="img/pizza2.jpg" alt="Маргарита" /><h3>Маргарита</h3><div class="price">450 ₽</div><button class="btn-small">В корзину</button></div>
+        <div class="card"><img src="img/set2.jpg" alt="Сет Дружба" /><h3>Сет "Дружба"</h3><div class="price">1290 ₽</div><button class="btn-small">В корзину</button></div>
+        <div class="card"><img src="img/drink2.jpg" alt="Чай зеленый" /><h3>Чай зеленый</h3><div class="price">180 ₽</div><button class="btn-small">В корзину</button></div>
+        <div class="card"><img src="img/rol3.jpg" alt="Унаги" /><h3>Унаги</h3><div class="price">590 ₽</div><button class="btn-small">В корзину</button></div>
+        <div class="card"><img src="img/pizza3.jpg" alt="4 сыра" /><h3>4 сыра</h3><div class="price">520 ₽</div><button class="btn-small">В корзину</button></div>
+    </div>
+</div>
+
+<!-- ===== СТРАНИЦА 3: АКЦИИ ===== -->
+<div id="sales" class="page">
+    <h2>🎉 Акции и скидки</h2>
+    <div class="sales-block" style="background: #e67e22; color: white; padding: 40px; border-radius: 15px; margin: 25px 0;">
+        <h2>🔥 Счастливые часы</h2>
+        <p style="font-size: 24px;">Каждый день с 14:00 до 16:00</p>
+        <p style="font-size: 32px; font-weight: bold;">Пицца за 299 ₽</p>
+        <div style="font-size: 36px; margin: 15px 0;">⏳ 02:15:30</div>
+        <button class="btn">Заказать со скидкой</button>
+    </div>
+    <div style="background: #2d2d2d; color: white; padding: 30px; border-radius: 15px; margin: 15px 0;">
+        <h3>🎁 Подарок за отзыв</h3>
+        <p>Напиши отзыв — получи десерт в подарок</p>
+    </div>
+    <div style="background: #1a1a1a; color: white; padding: 30px; border-radius: 15px; margin: 15px 0;">
+        <h3>🚀 Бесплатная доставка</h3>
+        <p>При заказе от 1000 ₽ доставка за наш счёт</p>
+    </div>
+    <div style="background: #f1c40f; color: #1a1a1a; padding: 30px; border-radius: 15px; margin: 15px 0;">
+        <h3>📧 Подпишись на скидку 10%</h3>
+        <input type="email" placeholder="Ваш email" style="padding: 12px; width: 280px; border-radius: 30px; border: none; margin: 10px 0;">
+        <button class="btn" style="padding: 12px 30px;">Подписаться</button>
+    </div>
+</div>
+
+<!-- ===== СТРАНИЦА 4: О НАС ===== -->
+<div id="about" class="page">
+    <h2>🍣 О нашем ресторане</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 25px 0;">
+        <div>
+            <img src="img/team.jpg" alt="Наша команда" style="width:100%; border-radius:15px; background:#eee;">
+        </div>
+        <div>
+            <h3>История успеха</h3>
+            <p>Мы открылись в 2020 году с мечтой приносить людям вкусную и свежую еду. Сегодня у нас 3 ресторана и 30 поваров.</p>
+            <p style="margin-top:10px;">Каждое утро мы закупаем свежую рыбу и овощи, чтобы наши блюда были идеальными.</p>
+        </div>
+    </div>
+    <h3>Наша команда</h3>
+    <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+        <div class="card"><img src="img/chef.jpg" alt="Шеф" style="border-radius:50%; height:120px; width:120px; object-fit:cover; margin:0 auto;"><h4>Алексей</h4><p>Шеф-повар</p></div>
+        <div class="card"><img src="img/sushist.jpg" alt="Сушист" style="border-radius:50%; height:120px; width:120px; object-fit:cover; margin:0 auto;"><h4>Мария</h4><p>Сушист 5 лет</p></div>
+        <div class="card"><img src="img/pizzamaker.jpg" alt="Пиццамейкер" style="border-radius:50%; height:120px; width:120px; object-fit:cover; margin:0 auto;"><h4>Иван</h4><p>Пиццмейкер</p></div>
+        <div class="card"><img src="img/courier.jpg" alt="Курьер" style="border-radius:50%; height:120px; width:120px; object-fit:cover; margin:0 auto;"><h4>Дмитрий</h4><p>Лучший курьер</p></div>
+    </div>
+</div>
+
+<!-- ===== СТРАНИЦА 5: КОНТАКТЫ ===== -->
+<div id="contacts" class="page">
+    <h2>📞 Контакты</h2>
+    <div class="contact-grid">
+        <div>
+            <h3>Свяжитесь с нами</h3>
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Телефон">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Ваше сообщение"></textarea>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+            <div style="margin-top: 20px;">
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉️ info@sushi-pizza.ru</p>
+                <p>🏠 ул. Ленина, 10, Москва</p>
+                <p>🕐 Ежедневно 10:00 - 23:00</p>
+            </div>
+        </div>
+        <div>
+            <div class="map-placeholder">
+                <img src="img/map.jpg" alt="Карта">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== ФУТЕР ===== -->
+<footer>
+    <p>© 2026 СушиПицца Доставка. Все права защищены.</p>
+    <p style="margin-top: 8px; font-size: 14px;">Сделано с ❤️ для вас</p>
+</footer>
+
+<!-- ===== JS ДЛЯ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ ===== -->
+<script>
+    function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(p => p.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+
+    // Табы в меню
+    document.querySelectorAll('.tabs button').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active-tab'));
+            this.classList.add('active-tab');
+        });
+    });
+</script>
+
+</body>
+</html>

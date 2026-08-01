@@ -1,0 +1,264 @@
+﻿/* ===== ОБЩИЕ СТИЛИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: #f8f4f0;
+    color: #2d2d2d;
+}
+
+/* ===== ХЕДЕР ===== */
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e67e22;
+}
+.logo span {
+    color: white;
+}
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #e67e22;
+}
+.phone {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===== СТРАНИЦЫ ===== */
+.page {
+    display: none;
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+.page.active {
+    display: block;
+}
+
+/* ===== ГЛАВНАЯ ===== */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+}
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #d35400;
+    transform: scale(1.05);
+}
+
+/* ===== КАРТОЧКИ ТОВАРОВ ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #eee;
+}
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.card .price {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card .btn-small {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.card .btn-small:hover {
+    background: #d35400;
+}
+
+/* ===== ПРЕИМУЩЕСТВА ===== */
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+    text-align: center;
+}
+.advantages div {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.advantages .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ===== ТАБЫ В МЕНЮ ===== */
+.tabs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.tabs button {
+    background: #eee;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.tabs button.active-tab {
+    background: #e67e22;
+    color: white;
+}
+.tabs button:hover {
+    background: #d35400;
+    color: white;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contact-grid input,
+.contact-grid textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.contact-grid textarea {
+    height: 120px;
+}
+.map-placeholder {
+    background: #ddd;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+}
+.map-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    nav {
+        justify-content: center;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .page {
+        padding: 20px;
+    }
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
